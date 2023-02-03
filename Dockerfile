@@ -11,4 +11,4 @@ RUN pip install streamlit
 COPY main.py .
 
 
-CMD ["streamlit", "run", "main.py","--server.enableCORS=false"]
+CMD ["streamlit", "run", "main.py","--server.enableCORS=false", "server.enableXsrfProtection=true"]
