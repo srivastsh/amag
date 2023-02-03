@@ -10,5 +10,6 @@ RUN pip install streamlit
 
 COPY main.py .
 
+EXPOSE 8502
 
-CMD ["streamlit", "run", "main.py","--server.enableCORS=false", "server.enableXsrfProtection=true"]
+CMD ["streamlit", "run", "main.py","--server.enableCORS=false", "server.enableXsrfProtection=false"]
