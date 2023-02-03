@@ -1,7 +1,7 @@
 import openai
 import streamlit as st
 
-openai.api_key = "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"
+openai.api_key = os.environ.get("OPENAI_API_KEY")
 model_engine = "text-davinci-003"
 
 def generate_affiliate_article(prompt, products):
