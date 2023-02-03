@@ -12,4 +12,4 @@ COPY main.py .
 
 EXPOSE 8502
 
-CMD ["streamlit", "run", "main.py","--server.enableCORS=false", "server.enableXsrfProtection=false"]
+CMD ["streamlit", "run", "main.py", "--browser.serverPort=8052", "--browser.serverAddress=amag.caprover.srivastsh.com"]
