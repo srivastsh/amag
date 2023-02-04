@@ -12,4 +12,4 @@ COPY main.py .
 
 EXPOSE 8501
 
-CMD ["streamlit", "run", "main.py", "--server.enableCORS=false"]
+CMD ["streamlit", "run", "main.py", "--server.enableCORS=false", "--server.enableWebsocketCompression=false"]
