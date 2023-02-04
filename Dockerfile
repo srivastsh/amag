@@ -12,4 +12,4 @@ COPY main.py .
 
 EXPOSE 8502
 
-CMD ["streamlit", "run", "main.py", "--browser.serverPort=80", "--browser.serverAddress=amag.caprover.srivastsh.com"]
+CMD ["streamlit", "run", "main.py", "--browser.serverPort=8502", "--browser.serverAddress=amag.caprover.srivastsh.com"]
