@@ -10,6 +10,6 @@ RUN pip install streamlit
 
 COPY main.py .
 
-EXPOSE 8502
+EXPOSE 8505
 
-CMD ["streamlit", "run", "main.py", "--browser.serverPort=8502", "--browser.serverAddress=amag.caprover.srivastsh.com"]
+CMD ["streamlit", "run", "main.py", "--browser.serverPort=81", "--browser.serverAddress=amag.caprover.srivastsh.com"]
